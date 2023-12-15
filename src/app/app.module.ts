@@ -5,17 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { RouterModule } from '@angular/router';
+import { CoursesComponent } from './courses/courses.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent,
+    CoursesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
+  exports:[HeaderComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
